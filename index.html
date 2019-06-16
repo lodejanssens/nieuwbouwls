@@ -1,0 +1,803 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="">
+
+    <title>Demo: NieuwBouw / LSM</title>
+    <meta name="description" content="Gmod Loading Screen Maker / Running a demo of NieuwBouw - Powered by gmod-lsm.com">
+
+    <link href="https://gmod-lsm.com/assets/css/normalize.css" rel="stylesheet">
+
+    <link href="https://gmod-lsm.com/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://gmod-lsm.com/assets/css/loadingscreen-base.css" rel="stylesheet">
+    
+     <link href="https://gmod-lsm.com/assets/css/load.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="https://gmod-lsm.com/images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <style>
+
+    html,body{
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body{
+      background: #000;
+    }
+
+
+  </style>
+
+  </head>
+
+  <body>
+
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+  </div>
+  		
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); z-index: 10;"></div>
+            <style>
+       #bg, #bg img, #bg2{
+        background-image: #000000;
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+      } 
+      </style>
+      
+    
+  
+    
+
+<link href="https://gmod-lsm.com/assets/css/designs/essential.css?v=1.2" rel="stylesheet">
+<div class="loading-screen loading-screen-demo">
+      <div class="title-info">
+        <h4 class="my-0 py-0" style="color: #e8e8e8">Welcome op</h4>
+        <h1 class="my-0 py-0" style="color: #e8e8e8">NieuwBouw</h1>
+      </div>
+      <div class="progress-bar-n" style="background-color: #222222">
+        <h2 style="color: #f2f2f2"><span id="percent">5</span>%<span class="progresstext" id="progresstext"></span></h2>
+          <div class="progress-bar-n-inner" id="progress-bar" style="background-color: #1abc9c"><div><h2 style="color: #222222"><span id="percent-loaded">5</span>%<span class="progresstext" id="progresstext-loaded">Retrieving server info...</span></h2></div></div>
+        </div>
+            <div class="rules-info">
+        <div class="rules-info-header" style="background-color: #222222"><h5 class="my-0 py-0" style="color: #f2f2f2">Rules</h5></div>
+        <div class="rules-item" style="background-color: #222222">
+          <div class="rules-item-number">
+            <h4 class="py-0 my-0" style="color: #f2f2f2">1.</h4>
+          </div>
+          <div class="rules-item-text">
+            <p class="lead" style="color: #ffffff">No Prop-killing</p>
+          </div>
+        </div>        <div class="rules-item rules-dark" style="background-color: #242424">
+          <div class="rules-item-number">
+            <h4 class="py-0 my-0" style="color: #f2f2f2">2.</h4>
+          </div>
+          <div class="rules-item-text">
+            <p class="lead" style="color: #ffffff">No Spamming</p>
+          </div>
+        </div>        <div class="rules-item" style="background-color: #222222">
+          <div class="rules-item-number">
+            <h4 class="py-0 my-0" style="color: #f2f2f2">3.</h4>
+          </div>
+          <div class="rules-item-text">
+            <p class="lead" style="color: #ffffff">No Cheats/Exploits</p>
+          </div>
+        </div>        <div class="rules-item rules-dark" style="background-color: #242424">
+          <div class="rules-item-number">
+            <h4 class="py-0 my-0" style="color: #f2f2f2">4.</h4>
+          </div>
+          <div class="rules-item-text">
+            <p class="lead" style="color: #ffffff">No Prop-abusing</p>
+          </div>
+        </div>        <div class="rules-item" style="background-color: #222222">
+          <div class="rules-item-number">
+            <h4 class="py-0 my-0" style="color: #f2f2f2">5.</h4>
+          </div>
+          <div class="rules-item-text">
+            <p class="lead" style="color: #ffffff">Do not crash the server</p>
+          </div>
+        </div>        <div class="rules-item rules-dark" style="background-color: #242424">
+          <div class="rules-item-number">
+            <h4 class="py-0 my-0" style="color: #f2f2f2">6.</h4>
+          </div>
+          <div class="rules-item-text">
+            <p class="lead" style="color: #ffffff">Enjoy your stay!</p>
+          </div>
+        </div>        </div>                <div class="staff-info">
+          <div class="staff-info-header" style="background-color: #222222"><h5 class="my-0 py-0" style="color: #f2f2f2">Staff</h5></div>
+          <div class="staff-item" style="background-color: #222222">
+          <div class="staff-item-img" style="border-color: #1abc9c">
+            <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a0/a0b888f7339737f426b58e568b64f6d544426c2a_medium.jpg">
+          </div>
+          <div class="staff-item-text">
+            <h4 class="my-0 py-0" style="color: #f2f2f2">Lode</h4>
+            <p class="lead" style="color: #777d84">Eigenaar</p>
+          </div>
+        </div>          </div>              </div>
+      <div style="background-size:100%; background-size: cover; margin: 0; padding: 0;" id="bg">
+      </div> 
+
+      <div style="background-size:100%; background-size: cover; margin: 0; padding: 0;" id="bg2">
+      </div>
+
+    <script src="https://gmod-lsm.com/assets/vendor/jquery/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $( "#loader-wrapper" ).fadeOut( "slow" );
+      });
+    $(function () {
+  $("[data-toggle=popover]").popover({html:true})
+  $("#upgrade-pro").popover('show')
+
+})
+  </script>
+
+    <script type="text/javascript">
+
+   document.getElementById("percent").innerHTML = "5";
+   document.getElementById("percent-loaded").innerHTML = "5";
+
+   $('#progress-bar').css({ "width" : "5%"});
+
+   document.getElementById("progresstext").innerHTML = "Retrieving server info...";
+   document.getElementById("progresstext-loaded").innerHTML = "Retrieving server info...";
+</script>
+
+      <script type="text/javascript">
+        var background1 = "https:\/\/d2v9y0dukr6mq2.cloudfront.net\/video\/thumbnail\/WUS5VgH\/timelapse-of-new-york-city-skyline-at-night-skyscrapers-in-manhattan-4k_e1ckzlb7__F0000.png";
+        var background2 = "https:\/\/cdn.mos.cms.futurecdn.net\/af79ccb711050307fc58368a3c5cb6ad.png";
+        var background3 = "https:\/\/d2v9y0dukr6mq2.cloudfront.net\/video\/thumbnail\/VkvG-2Ccliksa7zxw\/ultra-hd-4k-aerial-view-new-york-city-skyline-big-apple-night-light-office-tower_nd25cmjjx__F0000.png";
+        var background4 = "http:\/\/paperlief.com\/images\/city-skylines-at-night-wallpaper-3.jpg";
+      </script>
+
+             <script type="text/javascript">
+      $(function() {
+      var volume = 15;
+        $("audio").each(function(){ this.volume = volume/100; });
+      });
+    </script>
+    <audio controls autoplay loop hidden>
+      <source src="music/song.ogg" type="audio/ogg">
+      <source src="music/song.mp3" type="audio/mpeg">
+    </audio>
+          <script>
+    	//Change Progress
+	$(document).ready(function(){
+	
+	for (let progress = 0; progress < 11; progress++) {
+		setTimeout( function timer(){
+	
+	if(progress == 1){
+	$("#progress-bar").animate({width: '10%'});
+	
+	$('#percent').each(function() {
+  var $this = $(this),
+      countTo = 10;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	}
+	
+	if(progress == 2){
+		
+	$("#progresstext").text("Mounting Addons");
+	$("#progress-bar").animate({width: '20%'});
+	
+	
+	$('#percent').each(function() {
+  var $this = $(this),
+      countTo = 20;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	}
+	
+	if(progress == 3){
+	
+	$("#progress-bar").animate({width: '30%'});
+	
+	
+	$('#percent').each(function() {
+  var $this = $(this),
+      countTo = 30;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	}
+	
+	if(progress == 4){
+	
+	$("#progress-bar").animate({width: '40%'});
+	
+	
+	$('#percent').each(function() {
+  var $this = $(this),
+      countTo = 40;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	}
+	
+	if(progress == 5){
+	
+	$("#progress-bar").animate({width: '50%'});
+	
+	
+	$('#percent').each(function() {
+  var $this = $(this),
+      countTo = 50;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	}
+	/*
+	if(progress == 6){
+	
+	$("#progresstext").text('Workshop complete');
+	$("#progress-bar").animate({width: '60%'});
+	
+	
+	$('#percent').each(function() {
+  var $this = $(this),
+      countTo = 60;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	} */
+	
+	if(progress == 6){
+		
+	$("#progresstext").text("Workshop Complete");
+	$("#progress-bar").animate({width: '70%'});
+	
+	
+	$('#percent').each(function() {
+  var $this = $(this),
+      countTo = 70;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	}
+	
+	if(progress == 8){
+	
+	$("#progress-bar").animate({width: '80%'});
+	
+	
+	$('#percent').each(function() {
+  var $this = $(this),
+      countTo = 80;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	}
+	
+	if(progress == 9){
+		
+	$("#progresstext").text("Sending client info...");
+	$("#progress-bar").animate({width: '90%'});
+	
+	
+	$('#percent').each(function() {
+  var $this = $(this),
+      countTo = 90;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	}
+	
+	if(progress == 10){
+	
+	$("#progress-bar").animate({width: '100%'});
+	
+	
+	$('#percent').each(function() {
+  var $this = $(this),
+      countTo = 100;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	}
+
+
+	if(progress == 1){
+	
+	$('#percent-loaded').each(function() {
+  var $this = $(this),
+      countTo = 10;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	}
+	
+	if(progress == 2){
+		
+	$("#progresstext-loaded").text("Mounting Addons");
+	
+	
+	$('#percent-loaded').each(function() {
+  var $this = $(this),
+      countTo = 20;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	}
+	
+	if(progress == 3){
+	
+	
+	
+	$('#percent-loaded').each(function() {
+  var $this = $(this),
+      countTo = 30;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	}
+	
+	if(progress == 4){
+	
+	
+	
+	$('#percent-loaded').each(function() {
+  var $this = $(this),
+      countTo = 40;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	}
+	
+	if(progress == 5){
+	
+	
+	
+	$('#percent-loaded').each(function() {
+  var $this = $(this),
+      countTo = 50;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	}
+	/*
+	if(progress == 6){
+	
+	$("#progresstext").text('Workshop complete');
+	$("#progress-bar").animate({width: '60%'});
+	
+	
+	$('#percent').each(function() {
+  var $this = $(this),
+      countTo = 60;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	} */
+	
+	if(progress == 6){
+		
+	$("#progresstext-loaded").text("Workshop Complete");
+	
+	
+	$('#percent-loaded').each(function() {
+  var $this = $(this),
+      countTo = 70;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	}
+	
+	if(progress == 8){
+	
+	
+	
+	$('#percent-loaded').each(function() {
+  var $this = $(this),
+      countTo = 80;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	}
+	
+	if(progress == 9){
+		
+	$("#progresstext-loaded").text("Sending client info...");
+	
+	
+	$('#percent-loaded').each(function() {
+  var $this = $(this),
+      countTo = 90;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	}
+	
+	if(progress == 10){
+	
+	
+	
+	$('#percent-loaded').each(function() {
+  var $this = $(this),
+      countTo = 100;
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 300,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+});
+	
+	}
+
+	}, progress*2000 );
+	} 
+
+});
+
+
+    </script>
+
+    <script>
+		//showDemo();
+    $("#showDemo").fadeOut(0);
+		function showDemo(){
+			$("#showDemo").fadeIn(2000);
+			setTimeout(function(){
+				$("#showDemo").fadeOut(2000);
+				setTimeout(showDemo, 4000);
+			}, 4000);
+		}
+	</script>
+
+      <script src="https://gmod-lsm.com/assets/js/background-cycle.js"></script>
+
+    <script src="https://gmod-lsm.com/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
